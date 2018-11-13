@@ -5,8 +5,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-import com.example.pablo.basededatosprojecto.Clases.Alumnos;
-import com.example.pablo.basededatosprojecto.Clases.AlumnosRoomDatabese;
 
 import java.util.List;
 
@@ -19,13 +17,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AlumnosRoomDatabese.getDatabase(this).alumnosDao().getAllWords().observe(this, new Observer<List<Alumnos>>() {
+        ClasesRoomDatabase.getDatabase(this).claseDao().getAllClases().observe(this, new Observer<List<ClasesClass>>() {
+
             @Override
-            public void onChanged(@Nullable List<Alumnos> alumnos) {
+            public void onChanged(@Nullable List<Alumnos> clases) {
 
-                if (alumnos != null) {
+                if (clases != null) {
 
-                    Log.d("Database", alumnos.toString());
+                    Log.d("Database", clases.toString());
 
                 }
 

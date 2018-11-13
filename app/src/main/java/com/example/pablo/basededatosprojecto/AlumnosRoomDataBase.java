@@ -1,4 +1,4 @@
-package com.example.pablo.basededatosprojecto.Clases;
+package com.example.pablo.basededatosprojecto;
 
 import android.annotation.SuppressLint;
 import android.arch.persistence.db.SupportSQLiteDatabase;
@@ -8,7 +8,6 @@ import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.annotation.NonNull;
-import com.example.pablo.basededatosprojecto.BuildConfig;
 
 @Database(entities = {Alumnos.class}, version = 1)
 

@@ -1,4 +1,4 @@
-package com.example.pablo.basededatosprojecto.Clases;
+package com.example.pablo.basededatosprojecto;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;

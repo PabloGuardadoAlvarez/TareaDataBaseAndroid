@@ -1,11 +1,10 @@
-package com.example.pablo.basededatosprojecto.Clases;
+package com.example.pablo.basededatosprojecto;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;
 import android.arch.persistence.room.RoomDatabase;
 import android.content.Context;
 import android.os.AsyncTask;
-import com.example.pablo.basededatosprojecto.BuildConfig;
 
 @Database(entities = {ClasesClass.class}, version = 1)
 public abstract class ClasesRoomDatabase extends RoomDatabase {
